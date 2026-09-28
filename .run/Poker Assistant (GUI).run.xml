@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Poker Assistant (GUI)" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.pokerassistant.App" />
+    <module name="poker-assistant" />
+    <option name="PROGRAM_PARAMETERS" value="--gui" />
+    <option name="VM_PARAMETERS" value="-ea" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

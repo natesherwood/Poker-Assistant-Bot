@@ -1,0 +1,21 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+
+    // Test Explorer: skip the exhaustive 133M-hand "slow" check by default, like `mvn test`.
+    "java.test.config": [
+        {
+            "name": "Fast tests",
+            "vmArgs": ["-ea"],
+            "filters": { "tags": ["!slow"] }
+        },
+        {
+            "name": "All tests (including slow)",
+            "vmArgs": ["-ea"]
+        }
+    ],
+    "java.test.defaultConfig": "Fast tests",
+
+    "files.exclude": {
+        "**/target": true
+    }
+}

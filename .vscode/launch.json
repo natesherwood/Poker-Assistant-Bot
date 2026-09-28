@@ -1,0 +1,35 @@
+{
+    // The CLI reads from stdin, so it must run in the integrated terminal:
+    // the Debug Console cannot send keyboard input to the program.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Poker Assistant (GUI)",
+            "request": "launch",
+            "mainClass": "com.pokerassistant.App",
+            "projectName": "poker-assistant",
+            "vmArgs": "-ea",
+            "args": "--gui"
+        },
+        {
+            "type": "java",
+            "name": "Poker Assistant",
+            "request": "launch",
+            "mainClass": "com.pokerassistant.App",
+            "projectName": "poker-assistant",
+            "console": "integratedTerminal",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
+            "name": "Poker Assistant (no color)",
+            "request": "launch",
+            "mainClass": "com.pokerassistant.App",
+            "projectName": "poker-assistant",
+            "console": "integratedTerminal",
+            "vmArgs": "-ea",
+            "args": "--no-color"
+        }
+    ]
+}

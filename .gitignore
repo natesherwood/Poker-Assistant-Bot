@@ -1,0 +1,12 @@
+# Build output
+target/
+out/
+
+# IntelliJ IDEA (shared run configurations live in .run/ and are kept)
+.idea/
+*.iml
+*.iws
+
+# OS noise
+.DS_Store
+Thumbs.db
